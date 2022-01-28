@@ -7,11 +7,11 @@
 
 |  Date  |                    Topic                   |                    Due                    |
 |:------:|:------------------------------------------:|:-----------------------------------------:|
-| 18-Jan |            What is Data Science?           | Make sure you have Excel on your computer |
-| 20-Jan |                 Excel & VBA                |               Excel Homework              |
+| 18-Jan |  What is Data Science?[In Class Reading](http://jse.amstat.org/v23n2/witmer.pdf)   | Make sure you have Excel on your computer |
+| 20-Jan |                 Excel & VBA                |              [Excel Homework](https://docs.google.com/document/d/1g8eOYNe9sDmrstRgvFRZBskxjaIaD7Za4lFXSgPPkVw/edit)             |
 | 25-Jan | Excel Presentations and Writing about Data |                                           |
-| 27-Jan |       Writing about Data and Work Day      |                VBA Homework               |
-|  1-Feb |    Why is Data Visualization Important?    |            Florence Nightengale           |
+| 27-Jan |       Writing about Data and Work Day      |               [VBA Homework](https://docs.google.com/document/d/1bTkmUon_Kq6_DupNw2Szh-T4rFGqzeA2aIIBy7m1yhk/edit)              |
+|  1-Feb |    Why is Data Visualization Important?    |           [Florence Nightengale](https://docs.google.com/forms/d/e/1FAIpQLSeL-qfdJBp5YGpPWiKXRBsypEZTh9TTMcv1g5TrqOWTx_NF7A/viewform?hr_submission=ChkIq_Gs4d8BEhAI0Zip0ZoNEgcIgoif9PgMEAE)          |
 |  3-Feb |                   Tablau                   |                                           |
 |  8-Feb |              Chart Readability             |               How Charts Lie              |
 | 10-Feb |                   Tablau                   |            Tablau Homework Due            |
