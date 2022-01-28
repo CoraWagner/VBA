@@ -41,7 +41,6 @@ ActiveCell.NumberFormat = ";;;"
 Next cel
 
 '
-' https://www.mrexcel.com/board/threads/vba-to-select-all-cells-of-a-certain-color.648814/
 ' https://software-solutions-online.com/excel-vba-underline-font-style/
 ' https://www.educba.com/vba-font-color/
 ' https://www.extendoffice.com/documents/excel/2221-excel-remove-hyperlink-without-removing-formatting.html#:~:text=In%20Excel%2C%20there%20is%20no%20direct%20way%20to,open%20the%20Microsoft%20Visual%20Basic%20for%20Applications%20window.
