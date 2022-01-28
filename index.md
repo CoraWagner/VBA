@@ -7,21 +7,31 @@
 The first section of my Macro made in VBA is:
 
 `Dim ran As range
+
 Dim col As range
+
 On Error Resume Next
+
 Set ran = Application.Selection
+
 Set ran = Application.InputBox("Select a range of Columns you would like to hide.", "Hide Columns", ran.Address, Type:=8)
+
 For Each col In ran
+
 col.EntireColumn.Hidden = True
+
 Next col`
 
-This block of code allows the user to selects the specific range of columns that they would like to hide form view. This is possible by setting the `ran` range to `Application.Selection` and then `Application.InputBox("Select a range of Columns you would like to hide.", "Hide Columns", ran.Address, Type:=8)`. The parameters in `Application.InputBox()` are:
+This block of code allows the user to selects the specific range of columns that they would like to hide form view. This is possible by setting the `ran` range to `Application.Selection` and then `Application.InputBox("Select a range of Columns you would like to hide.", "Hide Columns", ran.Address, Type:=8)`. 
+
+The parameters in `Application.InputBox()` are:
 1. The main message of the pop-up box
 2. The main title of the pop-up box
 3. The location of the cells being selected
 4. The type that is being selected
 
 In this case, the type being selected is a cell reference. There is then a for loop that iterates through all the selected cells and hides the entire column. 
+
 **NOTE**: You only need to select one cell within each column. Selecting a whole column will cause Excel to crash.
 
 ### Hide Rows
