@@ -8,7 +8,7 @@
 |    Date    |                            Topic                           |                                                                 Due                                                                  |
 |:----------:|:----------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------:|
 |   18-Jan   |                   What   is Data Science                   |                                                                                                                                      |
-|   20-Jan   |                             VBA                            |                                                             HW1 -   Excel                                                            |
+|   20-Jan   |                             VBA                            |                                                             [HW1 - Excel](https://docs.google.com/document/d/1g8eOYNe9sDmrstRgvFRZBskxjaIaD7Za4lFXSgPPkVw/edit)                                                            |
 |   25-Jan   |                    Data   Communication                    |                                                                                                                                      |
 |   27-Jan   |                          Work Day                          |                                                              HW2 -   VBA                                                             |
 |    1-Feb   |           Why are data visualizations important ?          |                                                 Reading   Due - Florence Nightengale                                                 |
