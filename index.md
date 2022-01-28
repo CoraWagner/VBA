@@ -12,7 +12,7 @@
 |   25-Jan   |                    Data   Communication                    |                                                                                                                                      |
 |   27-Jan   |                          Work Day                          |                                                              [HW2 -   VBA](https://docs.google.com/document/d/1bTkmUon_Kq6_DupNw2Szh-T4rFGqzeA2aIIBy7m1yhk/edit)                                                             |
 |    1-Feb   |           Why are data visualizations important ?          |                                                 [Reading   Due - Florence Nightengale](https://docs.google.com/forms/d/1FBgScIpV9Vpa-jb1nlWuoCqOxFE7v5SmQtacpFHpIq8/edit)                                                 |
-|    3-Feb   |                           Tablau                           |                                                        COVID   Risk Calculator                                                       |
+|    3-Feb   |                           Tablau                           |                                                                                                                                      |
 |    8-Feb   |                   How visualizations lie                   |                                          Reading Due - Differnet Kinds of Data Visualization                                         |
 |   10-Feb   |                          Work Day                          |                                                             HW 3 - Tablau                                                            |
 |   15-Feb   |                          Danielle                          |                                                     Reading Due - How Charts Lie                                                     |
@@ -23,14 +23,14 @@
 |    3-Mar   |                          TextBlob                          |                                               Reading   Due - How to un annonymize data                                              |
 |    8-Mar   |                            VADER                           |                                                        De-Annonymizing   Data                                                        |
 |   10-Mar   |                   P-Hacking   Reflection                   |                                                       HW 5 - Sentiment Analysis                                                      |
-|   15-Mar   |                        Spring Break                        |                                                           More   P-Hacking                                                           |
+|   15-Mar   |                        Spring Break                        |                                                                                                                                      |
 |   17-Mar   |                        Spring Break WOO                    |                                                                                                                                      |
 |   22-Mar   |                        Random Forest                       |                                                                                                                                      |
 |   24-Mar   |                                                            |                                                                                                                                      |
 |   29-Mar   |                        Advising Day                        |                                                                                                                                      |
 |   31-Mar   |                                                            |                                                         HW 6 - Random Forest                                                         |
 |    5-Apr   |              Clustering - K Nearest Neighbors              |                                                                                                                                      |
-|    7-Apr   |                                                            | Possible   Reading - Proxy Discrimination - When AI find predictive proxies for race -   because society is segregated in this way.  |
+|    7-Apr   |                                                            |                                |
 |   12-Apr   |                                                            |                                                                                                                                      |
 |   14-Apr   |                                                            |                                                           HW 6 - Clustering                                                          |
 |   19-Apr   |                        Final Project                       |                                                                                                                                      |
