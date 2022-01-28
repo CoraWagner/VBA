@@ -1,10 +1,7 @@
 # VBA Macros
 ## Cora Wagner
+
 <style>
-.heatMap {
-    width: 70%;
-    text-align: center;
-}
 .heatMap th {
 background: grey;
 word-wrap: break-word;
