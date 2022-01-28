@@ -76,6 +76,7 @@ The last section of the macro is:
 As in the preveious sections, the user can select which cells they would like the hyperlinks to be removed from. The text is then changed to black, the undeline is removed, and the background color is set back to default. Then the hyperlink is cleared from the cell.
 
 ### Example Of a Table Cleaned-up with the Macro
+
 |  Date  |                    Topic                   |                    Due                    |
 |:------:|:------------------------------------------:|:-----------------------------------------:|
 | 18-Jan |  What is Data Science? [In Class Reading](http://jse.amstat.org/v23n2/witmer.pdf)   | Make sure you have Excel on your computer |
