@@ -7,12 +7,19 @@
 The first section of my Macro made in VBA is:
 
 `Dim ran As range`
+
 `Dim col As range`
+
 `On Error Resume Next`
+
 `Set ran = Application.Selection`
+
 `Set ran = Application.InputBox("Select a range of Columns you would like to hide.", "Hide Columns", ran.Address, Type:=8)`
+
 `For Each col In ran`
+
 `col.EntireColumn.Hidden = True`
+
 `Next col`
 
 This block of code allows the user to selects the specific range of columns that they would like to hide form view. This is possible by setting the `ran` range to `Application.Selection` and then `Application.InputBox("Select a range of Columns you would like to hide.", "Hide Columns", ran.Address, Type:=8)`. 
@@ -31,12 +38,19 @@ In this case, the type being selected is a cell reference. There is then a for l
 The second section of the macro is:
 
 `Dim rnge As range`
+
 `Dim row As range`
+
 `On Error Resume Next`
+
 `Set rnge = Application.Selection`
+
 `Set rnge = Application.InputBox("Select a range of Rows you would like to hide.", "Hide Rows", rnge.Address, Type:=8)`
+
 `For Each row In rnge`
+
 `row.EntireRow.Hidden = True`
+
 `Next row`
 
 This block of code is similar to *Hide Columns* section as it allows the user to select which rows they would like to remove. The only difference, besides the variable names, is that instead of `EntireColumn.Hidden = True` it is `EntireRow.Hidden = True`.
@@ -47,13 +61,21 @@ This block of code is similar to *Hide Columns* section as it allows the user to
 The third section of the macro is:
 
 `Dim rang As range`
+
 `Dim cel As range`
+
 `On Error Resume Next`
+
 `Set rang = Application.Selection`
+
 `Set rang = Application.InputBox("Select a range of Cells you would like to hide.", "Hide Cells", rang.Address, Type:=8)`
+
 `For Each cel In rang`
+
 `cel.Select`
+
 `ActiveCell.NumberFormat = ";;;"`
+
 `Next cel`
 
 Like the previous sections, the user is able to select the cells that they want the contents to be hidden. The way that the content is hidden is by setting the number format to `";;;"` which is a custom formula that allows the cell to retain the information, but removes the text.
@@ -62,15 +84,25 @@ Like the previous sections, the user is able to select the cells that they want 
 The last section of the macro is:
 
 `Dim rng As range, cell As range`
+
 `Dim xLink As Hyperlink`
+
 `Set rng = Application.Selection`
+
 `Set rng = Application.InputBox("Select a range of Hyperlinks you would like to remove.", "Remove Hyperlinks", rng.Address, Type:=8)`
+
 `For Each cell In rng`
+
 `cell.Select`
+
 `ActiveCell.Font.ColorIndex = 1`
+
 `ActiveCell.Font.Underline = False`
+
 `ActiveCell.Interior.ColorIndex = -4142`
+
 `ActiveCell.ClearHyperlinks`
+
 `Next cell`
 
 As in the preveious sections, the user can select which cells they would like the hyperlinks to be removed from. The text is then changed to black, the undeline is removed, and the background color is set back to default. Then the hyperlink is cleared from the cell.
