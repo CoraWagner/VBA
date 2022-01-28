@@ -60,15 +60,4 @@ ActiveCell.Interior.ColorIndex = -4142
 ActiveCell.ClearHyperlinks
 Next cell
 
-'
-' Merges cells that the user selects
-'
-Dim selct As range
-Dim mrg As range
-Set selct = Application.Selection
-Set selct = Application.InputBox("Select the cells you would like to merge.", "Merge Cells", selct.Address, Type:=8)
-For Each mrg In selct
-Selection.merge Across = True
-Next mrg
-
 End Sub
