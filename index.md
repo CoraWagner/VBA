@@ -35,6 +35,28 @@ In this case, the type being selected is a cell reference. There is then a for l
 **NOTE**: You only need to select one cell within each column. Selecting a whole column will cause Excel to crash.
 
 ### Hide Rows
+The second section of code is:
+`Dim rnge As range
+
+Dim row As range
+
+On Error Resume Next
+
+Set rnge = Application.Selection
+
+Set rnge = Application.InputBox("Select a range of Rows you would like to hide.", "Hide Rows", rnge.Address, Type:=8)
+
+For Each row In rnge
+
+row.EntireRow.Hidden = True
+
+Next row`
+
+This block of code is similar to *Hide Columns* section as it allows the user to select which rows they would like to remove. The only difference, besides the variable names, is that instead of `EntireColumn.Hidden = True` it is `EntireRow.Hidden = True`.
+
+**NOTE**: You only need to select one cell in the row you want to remove. Selecting a whole row will cause Excel to crash.
+
+### Hide Cell Content
 
 |  Date  |                    Topic                   |                    Due                    |
 |:------:|:------------------------------------------:|:-----------------------------------------:|
