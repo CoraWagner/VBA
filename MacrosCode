@@ -1,0 +1,74 @@
+Sub ScheduleCleaning()
+'
+' https://www.educba.com/vba-hide-columns/
+' https://www.wallstreetmojo.com/vba-inputbox/
+'
+' Hides Columns that the user selects
+'
+Dim ran As range
+Dim col As range
+On Error Resume Next
+Set ran = Application.Selection
+Set ran = Application.InputBox("Select a range of Columns you would like to hide.", "Hide Columns", ran.Address, Type:=8)
+For Each col In ran
+col.EntireColumn.Hidden = True
+Next col
+
+'
+' Hides Rows that the user selects
+'
+Dim rnge As range
+Dim row As range
+On Error Resume Next
+Set rnge = Application.Selection
+Set rnge = Application.InputBox("Select a range of Rows you would like to hide.", "Hide Rows", rnge.Address, Type:=8)
+For Each row In rnge
+row.EntireRow.Hidden = True
+Next row
+
+
+'
+' Hides Cell content that the user selects
+'
+Dim rang As range
+Dim cel As range
+On Error Resume Next
+Set rang = Application.Selection
+Set rang = Application.InputBox("Select a range of Cells you would like to hide.", "Hide Cells", rang.Address, Type:=8)
+For Each cel In rang
+cel.Select
+ActiveCell.NumberFormat = ";;;"
+Next cel
+
+'
+' https://www.mrexcel.com/board/threads/vba-to-select-all-cells-of-a-certain-color.648814/
+' https://software-solutions-online.com/excel-vba-underline-font-style/
+' https://www.educba.com/vba-font-color/
+' https://www.extendoffice.com/documents/excel/2221-excel-remove-hyperlink-without-removing-formatting.html#:~:text=In%20Excel%2C%20there%20is%20no%20direct%20way%20to,open%20the%20Microsoft%20Visual%20Basic%20for%20Applications%20window.
+'
+' Removes Hyperlinks that the user selects, but keept the alt text
+'
+Dim rng As range, cell As range
+Dim xLink As Hyperlink
+Set rng = Application.Selection
+Set rng = Application.InputBox("Select a range of Hyperlinks you would like to remove.", "Remove Hyperlinks", rng.Address, Type:=8)
+For Each cell In rng
+cell.Select
+ActiveCell.Font.ColorIndex = 1
+ActiveCell.Font.Underline = False
+ActiveCell.Interior.ColorIndex = -4142
+ActiveCell.ClearHyperlinks
+Next cell
+
+'
+' Merges cells that the user selects
+'
+Dim selct As range
+Dim mrg As range
+Set selct = Application.Selection
+Set selct = Application.InputBox("Select the cells you would like to merge.", "Merge Cells", selct.Address, Type:=8)
+For Each mrg In selct
+Selection.merge Across = True
+Next mrg
+
+End Sub
