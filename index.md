@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/CoraWagner/VBA/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CoraWagner/VBA/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+	Topic	Due
+		
+18-Jan	What is Data Science 	
+20-Jan	VBA	HW1 - Excel
+25-Jan	Data Communication	
+27-Jan	Work Day	HW2 - VBA
+1-Feb	Why are data visualizations important ?	Reading Due - Florence Nightengale
+3-Feb	Tablau	COVID Risk Calculator
+8-Feb	How visualizations lie	Reading Due - Differnet Kinds of Data Visualization
+10-Feb	Work Day	HW 3 - Tablau
+15-Feb	Danielle	Reading Due - How Charts Lie
+17-Feb	R Intro	
+22-Feb	Doing Better Data Visualization (R and ggplots tutorisl)	Why Data is good for governments to provide
+24-Feb	Work Day	HW 4 - ggplots
+1-Mar	Sentiment Analysis - History and Types	Data Annonymity
+3-Mar	TextBlob	Reading Due - How to un annonymize data
+8-Mar	VADER	De-Annonymizing Data
+10-Mar	P-Hacking Reflection	HW 5 - Sentiment Analysis
+15-Mar		More P-Hacking
+17-Mar		
+22-Mar	Random Forest	
+24-Mar		
+29-Mar		
+31-Mar		HW 6 - Random Forest
+5-Apr	Clustering - K Nearest Neighbors	
+7-Apr		Possible Reading - Proxy Discrimination - When AI find predictive proxies for race - because society is segregated in this way. 
+12-Apr		
+14-Apr		HW 6 - Clustering
+19-Apr		
+21-Apr		
+26-Apr		
+28-Apr		
+![image](https://user-images.githubusercontent.com/62083757/151473837-b1beae72-7889-465d-8007-05b98dc003ba.png)
