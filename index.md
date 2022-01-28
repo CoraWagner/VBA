@@ -7,7 +7,7 @@
 
 |    Date    |                            Topic                           |                                                                 Due                                                                  |
 |:----------:|:----------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------:|
-|   18-Jan   | What is Data Science [In Class Reading](http://jse.amstat.org/v23n2/witmer.pdf) |                                               
+|   18-Jan   |       What is Data Science [In Class Reading](http://jse.amstat.org/v23n2/witmer.pdf)       |                                               
                                |
 |   20-Jan   |                        Excel & VBA                         | [Excel Homework](https://docs.google.com/document/d/1g8eOYNe9sDmrstRgvFRZBskxjaIaD7Za4lFXSgPPkVw/edit) |
 |   25-Jan   |         Excel Presentations and Writing about Data         |                                                                                                                                      |
