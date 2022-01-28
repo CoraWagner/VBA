@@ -23,8 +23,8 @@
 |  3-Mar |                   GCPLOTS                  |                                           |
 |  8-Mar |                More GCPLOTS                |                                           |
 | 10-Mar |               GCPLOTS FOREVER              |            GCPLOTS Homework Due           |
-| 15-Mar |                Spring Break                |                                           |
-| 17-Mar |                                            |                                           |
+| 15-Mar |                SPRING BREAK                |                                           |
+| 17-Mar |             SPRING BREAK - WOO             |                                           |
 | 22-Mar |            Remember Statistics?            |                                           |
 | 24-Mar |               Random Forests               |                                           |
 | 29-Mar |                Advising Day                |                                           |
