@@ -4,8 +4,23 @@
 [Access VBA Code](https://github.com/CoraWagner/VBA/blob/4c92d580e2708a17d2b36338adc8a5b30a6afc44/MacrosCode)
 
 ### How to use the macro
-1. Copy the code from GitHub.
-2. 
+1. Copy the code from the GitHub link above.
+2. Open Excel and create a new file, or open an existing file you would like to use the macro on.
+3. Go to the *Developer* tab at the top of the Excel Workbook.
+
+![Developer Tab](Developer.png)
+
+4. Select *Record Macro* under the *Code* subsection. Name your macro and create a shortcut key combination. Select *Okay*
+
+![Record Macro](RecordMacro.png)
+
+5. Select *Stop Recording* where the *Record Macro* button was previously.
+6. Select *Macros* under the *Code* subsecction. A VBA page will pop-up.
+7. Paste the GitHub macro code in text box and save the macro.
+
+![VBA Page](VBA.png)
+
+8. You can now run the macro by using the shortcut key you created, or by selecting *Macro* and double clicking the name you created for the macro.
 
 ### How the macro works
 #### Hide Columns
