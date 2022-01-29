@@ -158,11 +158,11 @@ As in the preveious sections, the user can select which cells they would like th
 |:------:|:------------------------------------------:|:-----------------------------------------:|
 | 18-Jan |            What is Data Science            |                                           |
 | 20-Jan |                     VBA                    |                HW1 - Excel                |
-| 25-Jan |             Data Communication             |                                           |	
-27-Jan	Work Day	HW2 - VBA
-1-Feb	Why are data visualizations important ?	Reading Due - Florence Nightengale
-3-Feb	Tableau	
-8-Feb	How visualizations lie	Reading Due - Differnet Kinds of Data Visualization
+| 25-Jan |             Data Communication             |                                           |
+| 27-Jan |                  Work Day                  |                 HW2 - VBA                 |
+|  1-Feb |   Why are data visualizations important ?  |     Reading Due - Florence Nightengale    |
+|  3-Feb |                   Tableau                  |                                           |
+|  8-Feb |           How visualizations lie           |Reading Due - Differnet Kinds of Data Visualization|
 10-Feb	Work Day	HW 3 - Tableau
 15-Feb	Danielle	Reading Due - How Charts Lie
 17-Feb	R Intro	
