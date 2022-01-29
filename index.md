@@ -120,73 +120,45 @@ The last section of the macro is:
 As in the preveious sections, the user can select which cells they would like the hyperlinks to be removed from. The text is then changed to black, the undeline is removed, and the background color is set back to default. Then the hyperlink is cleared from the cell.
 
 ### Example Of a Table Cleaned-up with the Macro
+															
+	Day	Topic	Due					In Data Science 2 						Homework	70
+					https://classroom.google.com/u/0/c/NDQ0NzcyODkzNjk4										
+18-Jan	1	What is Data Science 			https://arielcwebster.github.io/DataScience/			R	Apache Pig					Project	15
+20-Jan	2	VBA	HW1 - Excel					Nueral Networks	Hadoop					Readings	10
+25-Jan	3	Data Communication						SQL						Participation	5
+27-Jan	4	Work Day	HW2 - VBA					D3 - Java Script - probably should have done first semester as part of a unit on HTML							100
+1-Feb	5	Why are data visualizations important ?	Reading Due - Florence Nightengale					Tableau							
+3-Feb	6	Tableau	COVID Risk Calculator					Julia							
+8-Feb	7	How visualizations lie	Reading Due - Differnet Kinds of Data Visualization					Data cleaning part 2 - https://github.com/JohnDickerson/cmsc320-fall2018/tree/master/project1							
+10-Feb	8	Work Day	HW 3 - Tableau												
+15-Feb	9	Danielle	Reading Due - How Charts Lie					Sentiment Analysis							
+17-Feb	10	R Intro						VADER Sentiment Analysis							
+22-Feb	11	Doing Better Data Visualization (R and ggplots tutorisl)	Why Data is good for governments to provide					TextBlob Sentiment Analysis (In Book 12.2)							
+24-Feb	12	Work Day	HW 4 - ggplots					In DS2 maybe make them do machine learning for sentiment analysis							
+1-Mar	13	Sentiment Analysis - History and Types	Data Annonymity	https://www.science.org/doi/10.1126/science.1256297											
+3-Mar	14	TextBlob	Reading Due - How to un annonymize data	Why Big Data Helps Science											
+8-Mar	15	VADER	De-Annonymizing Data	Or Access and more Data base stuff				Coursera Data Science Ethics							
+10-Mar	16	P-Hacking Reflection	HW 5 - Sentiment Analysis	Privacy Concerns with Big Data				Data Privacy			Statistics 				
+15-Mar	Spring Break		More P-Hacking								Nueral Networks				
+17-Mar								"Analyze data using tools like Spark, MongoDB and Cassandra."			Gradient Descent				
+22-Mar	17	Random Forest													
+24-Mar	18							Talk about the difference between supervised and unsupervised learning							
+29-Mar	Advising Day														
+31-Mar	19		HW 6 - Random Forest					Ethics							
+5-Apr	20	Clustering - K Nearest Neighbors						"History, Concept of Informed Consent "							
+7-Apr	21		Possible Reading - Proxy Discrimination - When AI find predictive proxies for race - because society is segregated in this way. 					Data Ownership 	Data Citation						
+12-Apr	22							Privacy	Touched on in Semester one but no lectures						
+14-Apr	23		HW 6 - Clustering					Anonymity							
+19-Apr	24	Final Project						Data Validity							
+21-Apr	25							Algorithmic Fairness 							
+26-Apr	26							Societal Consequences 							
+28-Apr	27							Code of ethics 	" - Write your own code of ethics for data science. Data science is still a young field and we are still trying to define the basic norms of socially acceptable behavior. Use what you have learned in this course to write your own norms around one of the following subfilds of data Science: Visualization, Data Aquisition, ...."						
+									What are counter arguments for each ethical rule you propose						
+															
+		Additional Readings	Data Sets												
+			Maryland Data												
+			NYT COVID Data												
 
-|  Date  |                    Topic                   |                    Due                    |
-|:------:|:------------------------------------------:|:-----------------------------------------:|
-| 18-Jan |  What is Data Science? [In Class Reading](http://jse.amstat.org/v23n2/witmer.pdf)   | Make sure you have Excel on your computer |
-| 20-Jan |                 Excel & VBA                |              [Excel Homework](https://docs.google.com/document/d/1g8eOYNe9sDmrstRgvFRZBskxjaIaD7Za4lFXSgPPkVw/edit)             |
-| 25-Jan | Excel Presentations and Writing about Data |                                           |
-| 27-Jan |       Writing about Data and Work Day      |               [VBA Homework](https://docs.google.com/document/d/1bTkmUon_Kq6_DupNw2Szh-T4rFGqzeA2aIIBy7m1yhk/edit)              |
-|  1-Feb |    Why is Data Visualization Important?    |           [Florence Nightengale](https://docs.google.com/forms/d/e/1FAIpQLSeL-qfdJBp5YGpPWiKXRBsypEZTh9TTMcv1g5TrqOWTx_NF7A/viewform?hr_submission=ChkIq_Gs4d8BEhAI0Zip0ZoNEgcIgoif9PgMEAE)          |
-|  3-Feb |                   Tablau                   |                                           |
-|  8-Feb |              Chart Readability             |               How Charts Lie              |
-| 10-Feb |                   Tablau                   |            Tablau Homework Due            |
-| 15-Feb |             Data Annonymization            |         How to UN-Annonymize Data         |
-| 17-Feb |             Sentiment Analysis             |             First Presenation             |
-| 22-Feb |                    VADER                   |                                           |
-| 24-Feb |                      R                     |      Sentiment Analysis Homework Due      |
-|  1-Mar |                   More R                   |                                           |
-|  3-Mar |                   GCPLOTS                  |                                           |
-|  8-Mar |                More GCPLOTS                |                                           |
-| 10-Mar |               GCPLOTS FOREVER              |            GCPLOTS Homework Due           |
-| 15-Mar |                SPRING BREAK                |                                           |
-| 17-Mar |             SPRING BREAK - WOO             |                                           |
-| 22-Mar |            Remember Statistics?            |                                           |
-| 24-Mar |               Random Forests               |                                           |
-| 29-Mar |                Advising Day                |                                           |
-| 31-Mar |                Presentations               |        Random Forests Homework Due        |
-|  5-Apr |      Clustering - K Nearest Neighbors      |                                           |
-|  7-Apr |                                            |                                           |
-| 12-Apr |                                            |          Clustering Homework Due          |
-| 14-Apr |                                            |                                           |
-| 19-Apr |                                            |                                           |
-| 21-Apr |           Practice Presentations           |                 Milestone                 |
-| 26-Apr |                                            |                                           |
-| 28-Apr |            Project Presentations           |             Final Project Due             |
-
-|        |                    Topic                   |                    Due                    |
-|:------:|:------------------------------------------:|:-----------------------------------------:|
-| 18-Jan |            What is Data Science            |                                           |
-| 20-Jan |                     VBA                    |                HW1 - Excel                |
-| 25-Jan |             Data Communication             |                                           |
-| 27-Jan |                  Work Day                  |                 HW2 - VBA                 |
-|  1-Feb |   Why are data visualizations important ?  |     Reading Due - Florence Nightengale    |
-|  3-Feb |                   Tableau                  |                                           |
-|  8-Feb |           How visualizations lie           |Reading Due - Differnet Kinds of Data Visualization|
-| 10-Feb |                  Work Day                  |               HW 3 - Tableau              |
-| 15-Feb |                  Danielle                  |        Reading Due - How Charts Lie       |
-| 17-Feb |                   R Intro                  |                                           |
-| 22-Feb |Doing Better Data Visualization (R and ggplots tutorisl)|Why Data is good for governments to provide|
-24-Feb	Work Day	HW 4 - ggplots
-1-Mar	Sentiment Analysis - History and Types	
-3-Mar	TextBlob	
-8-Mar	VADER	
-10-Mar	P-Hacking Reflection	HW 5 - Sentiment Analysis
-15-Mar		
-17-Mar		
-22-Mar	Random Forest	
-24-Mar		
-29-Mar		
-31-Mar		HW 6 - Random Forest
-5-Apr	Clustering - K Nearest Neighbors	
-7-Apr		
-12-Apr		
-14-Apr		
-19-Apr		
-21-Apr		
-26-Apr		
-28-Apr		
-![image](https://user-images.githubusercontent.com/62083757/151676434-a9d276c5-c775-4641-bcaa-d1d57a6e8174.png)
 
 
 ### Works Cited
