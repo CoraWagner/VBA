@@ -154,6 +154,41 @@ As in the preveious sections, the user can select which cells they would like th
 | 26-Apr |                                            |                                           |
 | 28-Apr |            Project Presentations           |             Final Project Due             |
 
+|        |                    Topic                   |                    Due                    |
+|:------:|:------------------------------------------:|:-----------------------------------------:|
+| 18-Jan |            What is Data Science            |                                           |
+| 20-Jan |                     VBA                    |                HW1 - Excel                |
+| 25-Jan |             Data Communication             |                                           |	
+27-Jan	Work Day	HW2 - VBA
+1-Feb	Why are data visualizations important ?	Reading Due - Florence Nightengale
+3-Feb	Tableau	
+8-Feb	How visualizations lie	Reading Due - Differnet Kinds of Data Visualization
+10-Feb	Work Day	HW 3 - Tableau
+15-Feb	Danielle	Reading Due - How Charts Lie
+17-Feb	R Intro	
+22-Feb	Doing Better Data Visualization (R and ggplots tutorisl)	Why Data is good for governments to provide
+24-Feb	Work Day	HW 4 - ggplots
+1-Mar	Sentiment Analysis - History and Types	
+3-Mar	TextBlob	
+8-Mar	VADER	
+10-Mar	P-Hacking Reflection	HW 5 - Sentiment Analysis
+15-Mar		
+17-Mar		
+22-Mar	Random Forest	
+24-Mar		
+29-Mar		
+31-Mar		HW 6 - Random Forest
+5-Apr	Clustering - K Nearest Neighbors	
+7-Apr		
+12-Apr		
+14-Apr		
+19-Apr		
+21-Apr		
+26-Apr		
+28-Apr		
+![image](https://user-images.githubusercontent.com/62083757/151676434-a9d276c5-c775-4641-bcaa-d1d57a6e8174.png)
+
+
 ### Works Cited
 [Hide Columns](https://www.educba.com/vba-hide-columns/)
 
