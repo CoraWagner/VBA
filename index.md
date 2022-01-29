@@ -163,10 +163,10 @@ As in the preveious sections, the user can select which cells they would like th
 |  1-Feb |   Why are data visualizations important ?  |     Reading Due - Florence Nightengale    |
 |  3-Feb |                   Tableau                  |                                           |
 |  8-Feb |           How visualizations lie           |Reading Due - Differnet Kinds of Data Visualization|
-10-Feb	Work Day	HW 3 - Tableau
-15-Feb	Danielle	Reading Due - How Charts Lie
-17-Feb	R Intro	
-22-Feb	Doing Better Data Visualization (R and ggplots tutorisl)	Why Data is good for governments to provide
+| 10-Feb |                  Work Day                  |               HW 3 - Tableau              |
+| 15-Feb |                  Danielle                  |        Reading Due - How Charts Lie       |
+| 17-Feb |                   R Intro                  |                                           |
+| 22-Feb |Doing Better Data Visualization (R and ggplots tutorisl)|Why Data is good for governments to provide|
 24-Feb	Work Day	HW 4 - ggplots
 1-Mar	Sentiment Analysis - History and Types	
 3-Mar	TextBlob	
