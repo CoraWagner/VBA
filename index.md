@@ -3,7 +3,12 @@
 
 [Access VBA Code](https://github.com/CoraWagner/VBA/blob/4c92d580e2708a17d2b36338adc8a5b30a6afc44/MacrosCode)
 
-### Hide Columns
+### How to use the macro
+1. Copy the code from GitHub.
+2. 
+
+### How the macro works
+#### Hide Columns
 The first section of my Macro made in VBA is:
 
 `Dim ran As range`
@@ -34,7 +39,7 @@ In this case, the type being selected is a cell reference. There is then a for l
 
 **NOTE**: You only need to select one cell within each column. Selecting a whole column will cause Excel to crash.
 
-### Hide Rows
+#### Hide Rows
 The second section of the macro is:
 
 `Dim rnge As range`
@@ -57,7 +62,7 @@ This block of code is similar to *Hide Columns* section as it allows the user to
 
 **NOTE**: You only need to select one cell in the row you want to remove. Selecting a whole row will cause Excel to crash.
 
-### Hide Cell Content
+#### Hide Cell Content
 The third section of the macro is:
 
 `Dim rang As range`
@@ -80,7 +85,7 @@ The third section of the macro is:
 
 Like the previous sections, the user is able to select the cells that they want the contents to be hidden. The way that the content is hidden is by setting the number format to `";;;"` which is a custom formula that allows the cell to retain the information, but removes the text.
 
-### Remove Unwanted Hyperlinks
+#### Remove Unwanted Hyperlinks
 The last section of the macro is:
 
 `Dim rng As range, cell As range`
@@ -152,3 +157,5 @@ As in the preveious sections, the user can select which cells they would like th
 [Change Font Color](https://www.educba.com/vba-font-color/)
 
 [Clear Hyperlinks](https://www.extendoffice.com/documents/excel/2221-excel-remove-hyperlink-without-removing-formatting.html#:~:text=In%20Excel%2C%20there%20is%20no%20direct%20way%20to,open%20the%20Microsoft%20Visual%20Basic%20for%20Applications%20window.)
+
+[Markdown Table Generator](https://www.tablesgenerator.com/markdown_tables)
