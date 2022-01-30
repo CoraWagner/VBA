@@ -34,7 +34,7 @@ The first section of my Macro made in VBA is:
 
 `Next col`
 
-This block of code allows the user to selects the specific range of columns that they would like to delete. This is possible by setting the `ran` range to `Application.Selection` and then `Application.InputBox("Select a range of Columns you would like to Remove.", "Remove Columns", ran.Address, Type:=8)`. 
+This block of code allows the user to selects the specific range of columns that they would like to delete. This is possible by setting the `ran` range to `Application.Selection` and then `Application.InputBox("Select a range of Columns you would like to remove.", "Remove Columns", ran.Address, Type:=8)`. 
 
 The parameters in `Application.InputBox()` are:
 1. The main message of the pop-up box
