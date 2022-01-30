@@ -1,7 +1,7 @@
 # VBA Macros
 ## Cora Wagner
 
-[Access VBA Code](https://github.com/CoraWagner/VBA/blob/9243797c50da243d44a5114c495b6160db2f0dd4/MacrosCode)
+[Access VBA Code](https://github.com/CoraWagner/VBA/blob/552b9a9cbc0f9f0090046269d59882b4d2d5f6fb/MacrosCode)
 
 ### How to use the macro
 1. Copy the code from the GitHub link above.
@@ -18,19 +18,19 @@
 #### Delete Columns
 The first section of my Macro made in VBA is:
 
-`Dim ran As range`
+`Dim ran As Range`
 
-`Dim col As range`
+`Dim col As Range`
 
 `On Error Resume Next`
 
 `Set ran = Application.Selection`
 
-`Set ran = Application.InputBox("Select a range of Columns you would like to remove.", "Remove Columns", ran.Address, Type:=8)`
+`Set ran = Application.InputBox("Select a range of Columns you would like to Remove.", "Remove Columns", ran.Address, Type:=8)`
 
 `For Each col In ran`
 
-`col.EntireColumn.Delete`
+`    col.EntireColumn.Delete`
 
 `Next col`
 
@@ -49,9 +49,9 @@ In this case, the type being selected is a cell reference. There is then a for l
 #### Delete Rows
 The second section of the macro is:
 
-`Dim rnge As range`
+`Dim rnge As Range`
 
-`Dim row As range`
+`Dim row As Range`
 
 `On Error Resume Next`
 
@@ -61,7 +61,7 @@ The second section of the macro is:
 
 `For Each row In rnge`
 
-`row.EntireRow.Delete`
+`    row.EntireRow.Delete`
 
 `Next row`
 
@@ -72,7 +72,7 @@ This block of code is similar to the *Delete Columns* section as it allows the u
 #### Remove Unwanted Hyperlinks
 The third section of the macro is:
 
-`Dim rng As range, cell As range`
+`Dim rng As Range, cell As Range`
 
 `Dim xLink As Hyperlink`
 
@@ -82,15 +82,15 @@ The third section of the macro is:
 
 `For Each cell In rng`
 
-`cell.Select`
+`    cell.Select`
 
-`ActiveCell.Font.ColorIndex = 1`
+`    ActiveCell.Font.ColorIndex = 1`
 
-`ActiveCell.Font.Underline = False`
+`    ActiveCell.Font.Underline = False`
 
-`ActiveCell.Interior.ColorIndex = -4142`
+`    ActiveCell.Interior.ColorIndex = -4142`
 
-`ActiveCell.ClearHyperlinks`
+`    ActiveCell.ClearHyperlinks`
 
 `Next cell`
 
@@ -99,21 +99,22 @@ As in the preveious sections, the user can select which cells they would like th
 #### Clear Cell Content
 The forth section of the macro is:
 
-`Dim rang As range`
+`Dim rang As Range`
 
-`Dim cel As range`
+`Dim cel As Range`
 
 `On Error Resume Next`
 
+
 `Set rang = Application.Selection`
 
-`Set rang = Application.InputBox("Select a range of Cells you would like to clear.", "Clear Cells", rang.Address, Type:=8)`
+`Set rang = Application.InputBox("Select a range of Cells you would like to Clear.", "Clear Cells", rang.Address, Type:=8)`
 
 `For Each cel In rang`
 
-`cel.Select`
+`    cel.Select`
 
-`ActiveCell.ClearContent`
+`    ActiveCell.ClearContents`
 
 `Next cel`
 
