@@ -8,7 +8,7 @@
 2. Open Excel and create a new file, or open an existing file you would like to use the macro on.
 3. Go to the *Developer* tab at the top of the Excel Workbook. 
 ![Developer Tab](Developer.png)
-4. Select *Record Macro* under the *Code* subsection. Name your macro and create a shortcut key combination. Select *Okay*. ![Record Macro](RecordMacro.png)
+4. Select *Record Macro* under the *Code* subsection. Name your macro and create a shortcut key combination. Select *Ok*. ![Record Macro](RecordMacro.png)
 5. Select *Stop Recording* where the *Record Macro* button was previously.
 6. Select *Macros* under the *Code* subsecction. A VBA page will pop-up.
 7. Paste the GitHub macro code in text box and save the macro. ![VBA Page](VBA.png)
@@ -26,7 +26,7 @@ The first section of my Macro made in VBA is:
 
 `Set ran = Application.Selection`
 
-`Set ran = Application.InputBox("Select a range of Columns you would like to hide.", "Hide Columns", ran.Address, Type:=8)`
+`Set ran = Application.InputBox("Select a range of Columns you would like to remove.", "Remove Columns", ran.Address, Type:=8)`
 
 `For Each col In ran`
 
@@ -34,7 +34,7 @@ The first section of my Macro made in VBA is:
 
 `Next col`
 
-This block of code allows the user to selects the specific range of columns that they would like to delete. This is possible by setting the `ran` range to `Application.Selection` and then `Application.InputBox("Select a range of Columns you would like to hide.", "Hide Columns", ran.Address, Type:=8)`. 
+This block of code allows the user to selects the specific range of columns that they would like to delete. This is possible by setting the `ran` range to `Application.Selection` and then `Application.InputBox("Select a range of Columns you would like to Remove.", "Remove Columns", ran.Address, Type:=8)`. 
 
 The parameters in `Application.InputBox()` are:
 1. The main message of the pop-up box
@@ -57,7 +57,7 @@ The second section of the macro is:
 
 `Set rnge = Application.Selection`
 
-`Set rnge = Application.InputBox("Select a range of Rows you would like to hide.", "Hide Rows", rnge.Address, Type:=8)`
+`Set rnge = Application.InputBox("Select a range of Rows you would like to remove.", "Remove Rows", rnge.Address, Type:=8)`
 
 `For Each row In rnge`
 
@@ -65,7 +65,7 @@ The second section of the macro is:
 
 `Next row`
 
-This block of code is similar to *delete Columns* section as it allows the user to select which rows they would like to remove. The only difference, besides the variable names, is that instead of `EntireColumn` it is `EntireRow`.
+This block of code is similar to the *Delete Columns* section as it allows the user to select which rows they would like to remove. The only difference, besides the variable names, is that instead of `EntireColumn` it is `EntireRow`.
 
 **NOTE**: In order to delete the entire row, you need to highlight the entire row. Not just a single cell.
 
@@ -94,7 +94,7 @@ The third section of the macro is:
 
 `Next cell`
 
-As in the preveious sections, the user can select which cells they would like the hyperlinks to be removed from. The text is then changed to black, the undeline is removed, and the background color is set back to default. Then the hyperlink is cleared from the cell.
+As in the preveious sections, the user can select which cells they would like the hyperlinks to be removed from. The text is then changed to black, the underline is removed, and the background color is set back to default. Then the hyperlink is cleared from the cell.
 
 #### Clear Cell Content
 The forth section of the macro is:
@@ -107,7 +107,7 @@ The forth section of the macro is:
 
 `Set rang = Application.Selection`
 
-`Set rang = Application.InputBox("Select a range of Cells you would like to hide.", "Hide Cells", rang.Address, Type:=8)`
+`Set rang = Application.InputBox("Select a range of Cells you would like to clear.", "Clear Cells", rang.Address, Type:=8)`
 
 `For Each cel In rang`
 
@@ -126,6 +126,12 @@ The last section of the macro is:
 
 `Dim newFile As String`
 
+`Dim hold As String`
+
+`Dim link As Hyperlink`
+
+`Dim i As Integer`
+
 `newFile = Application.DefaultFilePath & "\VBA+Macros.txt"`
 
 `On Error Resume Next`
@@ -136,25 +142,51 @@ The last section of the macro is:
 
 `Open newFile For Output As #1`
 
+`x = 1`
+
 `For i = 1 To r.Rows.Count`
 
-`For j = 1 To r.Columns.Count`
+`    For j = 1 To r.Columns.Count`
+    
+`        hold = r.Cells(i, j).Value`
+	
+`        If r.Cells(i, j).Hyperlinks.Count > 0 Then`
+            
+`	    reqLink = r.Hyperlinks(x).Address`
+	    
+`            x = x + 1`
 
-`If j = r.Columns.Count Then`
+`            If j = r.Columns.Count Then`
 
-`Print #1, "|"; r.Cells(i, j).Value; "|"`
+`                Print #1, "|["; hold; "]("; reqLink; ")|"`
 
-`Else`
+`            Else`
 
-`Print #1, "|"; r.Cells(i, j).Value;`
+`                Print #1, "|["; hold; "]("; reqLink; ")";`
 
-`End If`
+`            End If`
 
-`Next j`
+`        Else`
+
+`            If j = r.Columns.Count Then`
+
+`                Print #1, "|"; hold; "|"`
+
+`            Else`
+
+`                Print #1, "|"; hold;`
+
+`            End If`
+
+`        End If`
+
+`    Next j`
 
 `Next i`
 
 `Close #1`
+
+`End Sub`
 
 This section of code creates a new file for the macro to print to. It saves it to the users default file path and names the file *VBA+Macros.txt*. It then allows the user to select the range of cells that they would like converted into a markdown table. It then loops through each selected cell and prints the cell values to the new file while including specific formating guidelines for a markdown table. Once the maacro finishes running, the user can access the saved file.
 
