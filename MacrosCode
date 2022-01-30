@@ -55,16 +55,13 @@ Set rang = Application.Selection
 Set rang = Application.InputBox("Select a range of Cells you would like to hide.", "Hide Cells", rang.Address, Type:=8)
 For Each cel In rang
 cel.Select
-ActiveCell.Delete
+ActiveCell.ClearContents
 Next cel
 
 '
 ' https://www.educba.com/vba-write-text-file/
 ' https://www.excel-easy.com/vba/examples/write-data-to-text-file.html#:~:text=Excel%20VBA%20writes%20the%20value%20of%20a%20cell,the%20value%20of%20cellValue%20to%20the%20text%20file.
 ' https://analysistabs.com/vba/vba-write-string-text-file-without-quotes/#:~:text=Starting%20the%20program%20and%20sub%20procedure%20to%20write,text%20file%20for%20Output%20with%20FileNumber%20as%201.
-'
-' Writes a range of cells that a user selects to a text file titled VBA+Macros.txt
-' Formats the file to build a table in markdown
 '
 Dim r As Range
 Dim newFile As String
