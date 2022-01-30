@@ -206,4 +206,6 @@ To build the table, the user needs to copy the text file and paste it into the m
 
 [Write to Text File](https://www.excel-easy.com/vba/examples/write-data-to-text-file.html)
 
+[Extract URL from Hyperlink](https://spreadsheetplanet.com/extract-url-from-hyperlinks-excel/#:~:text=Extract%20URL%20from%20Hyperlinks%20Using%20Formula.%201%20Open,a%20Module%20to%20the%20workbook%20objects.%20More%20items)
+
 [Print to Text File](https://analysistabs.com/vba/vba-write-string-text-file-without-quotes/#:~:text=Starting%20the%20program%20and%20sub%20procedure%20to%20write,text%20file%20for%20Output%20with%20FileNumber%20as%201.)
