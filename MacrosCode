@@ -1,5 +1,12 @@
 Sub CleanSchedule()
 '
+' Cora Wagner
+'
+' A macro that allows a user to edit an excel sheet and create a text document that can be turned into a table
+' in markdown
+'
+
+'
 ' https://www.wallstreetmojo.com/vba-inputbox/
 '
 ' Hides Columns that the user selects
@@ -10,7 +17,7 @@ On Error Resume Next
 Set ran = Application.Selection
 Set ran = Application.InputBox("Select a range of Columns you would like to hide.", "Hide Columns", ran.Address, Type:=8)
 For Each col In ran
-col.EntireColumn.Delete
+    col.EntireColumn.Delete
 Next col
 
 '
@@ -22,7 +29,7 @@ On Error Resume Next
 Set rnge = Application.Selection
 Set rnge = Application.InputBox("Select a range of Rows you would like to hide.", "Hide Rows", rnge.Address, Type:=8)
 For Each row In rnge
-row.EntireRow.Delete
+    row.EntireRow.Delete
 Next row
 
 '
@@ -37,11 +44,11 @@ Dim xLink As Hyperlink
 Set rng = Application.Selection
 Set rng = Application.InputBox("Select a range of Hyperlinks you would like to remove.", "Remove Hyperlinks", rng.Address, Type:=8)
 For Each cell In rng
-cell.Select
-ActiveCell.Font.ColorIndex = 1
-ActiveCell.Font.Underline = False
-ActiveCell.Interior.ColorIndex = -4142
-ActiveCell.ClearHyperlinks
+    cell.Select
+    ActiveCell.Font.ColorIndex = 1
+    ActiveCell.Font.Underline = False
+    ActiveCell.Interior.ColorIndex = -4142
+    ActiveCell.ClearHyperlinks
 Next cell
 
 '
@@ -53,8 +60,8 @@ On Error Resume Next
 Set rang = Application.Selection
 Set rang = Application.InputBox("Select a range of Cells you would like to hide.", "Hide Cells", rang.Address, Type:=8)
 For Each cel In rang
-cel.Select
-ActiveCell.ClearContents
+    cel.Select
+    ActiveCell.ClearContents
 Next cel
 
 '
@@ -62,12 +69,14 @@ Next cel
 ' https://analysistabs.com/vba/vba-write-string-text-file-without-quotes/#:~:text=Starting%20the%20program%20and%20sub%20procedure%20to%20write,text%20file%20for%20Output%20with%20FileNumber%20as%201.
 ' https://spreadsheetplanet.com/extract-url-from-hyperlinks-excel/#:~:text=Extract%20URL%20from%20Hyperlinks%20Using%20Formula.%201%20Open,a%20Module%20to%20the%20workbook%20objects.%20More%20items
 '
+' Prints to a new file the cell value and hyperlink URL (if present) and
+' formats the file in a way that it can build a table in markdown
+'
 Dim r As Range
 Dim newFile As String
 Dim hold As String
 Dim link As Hyperlink
 Dim i As Integer
-
 newFile = Application.DefaultFilePath & "\VBA+Macros.txt"
 On Error Resume Next
 Set r = Application.Selection
