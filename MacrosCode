@@ -1,29 +1,29 @@
-Sub ScheduleCleaning()
+Sub CleanSchedule()
 '
 ' https://www.educba.com/vba-hide-columns/
 ' https://www.wallstreetmojo.com/vba-inputbox/
 '
 ' Hides Columns that the user selects
 '
-Dim ran As range
-Dim col As range
+Dim ran As Range
+Dim col As Range
 On Error Resume Next
 Set ran = Application.Selection
 Set ran = Application.InputBox("Select a range of Columns you would like to hide.", "Hide Columns", ran.Address, Type:=8)
 For Each col In ran
-col.EntireColumn.Hidden = True
+col.EntireColumn.Delete
 Next col
 
 '
 ' Hides Rows that the user selects
 '
-Dim rnge As range
-Dim row As range
+Dim rnge As Range
+Dim row As Range
 On Error Resume Next
 Set rnge = Application.Selection
 Set rnge = Application.InputBox("Select a range of Rows you would like to hide.", "Hide Rows", rnge.Address, Type:=8)
 For Each row In rnge
-row.EntireRow.Hidden = True
+row.EntireRow.Delete
 Next row
 
 '
@@ -33,7 +33,7 @@ Next row
 '
 ' Removes Hyperlinks that the user selects, but keept the alt text
 '
-Dim rng As range, cell As range
+Dim rng As Range, cell As Range
 Dim xLink As Hyperlink
 Set rng = Application.Selection
 Set rng = Application.InputBox("Select a range of Hyperlinks you would like to remove.", "Remove Hyperlinks", rng.Address, Type:=8)
@@ -48,14 +48,40 @@ Next cell
 '
 ' Hides Cell content that the user selects
 '
-Dim rang As range
-Dim cel As range
+Dim rang As Range
+Dim cel As Range
 On Error Resume Next
 Set rang = Application.Selection
 Set rang = Application.InputBox("Select a range of Cells you would like to hide.", "Hide Cells", rang.Address, Type:=8)
 For Each cel In rang
 cel.Select
-ActiveCell.NumberFormat = ";;;"
+ActiveCell.Delete
 Next cel
+
+'
+' https://www.educba.com/vba-write-text-file/
+' https://www.excel-easy.com/vba/examples/write-data-to-text-file.html#:~:text=Excel%20VBA%20writes%20the%20value%20of%20a%20cell,the%20value%20of%20cellValue%20to%20the%20text%20file.
+' https://analysistabs.com/vba/vba-write-string-text-file-without-quotes/#:~:text=Starting%20the%20program%20and%20sub%20procedure%20to%20write,text%20file%20for%20Output%20with%20FileNumber%20as%201.
+'
+' Writes a range of cells that a user selects to a text file titled VBA+Macros.txt
+' Formats the file to build a table in markdown
+'
+Dim r As Range
+Dim newFile As String
+newFile = Application.DefaultFilePath & "\VBA+Macros.txt"
+On Error Resume Next
+Set r = Application.Selection
+Set r = Application.InputBox("Select a range of cells you would like to turn into a table.", "Make Table", r.Address, Type:=8)
+Open newFile For Output As #1
+For i = 1 To r.Rows.Count
+    For j = 1 To r.Columns.Count
+        If j = r.Columns.Count Then
+            Print #1, "|"; r.Cells(i, j).Value; "|"
+        Else
+            Print #1, "|"; r.Cells(i, j).Value;
+        End If
+    Next j
+Next i
+Close #1
 
 End Sub
