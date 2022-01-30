@@ -26,7 +26,7 @@ The first section of my Macro made in VBA is:
 
 `Set ran = Application.Selection`
 
-`Set ran = Application.InputBox("Select a range of Columns you would like to Remove.", "Remove Columns", ran.Address, Type:=8)`
+`Set ran = Application.InputBox("Select a range of Columns you would like to remove.", "Remove Columns", ran.Address, Type:=8)`
 
 `For Each col In ran`
 
@@ -107,7 +107,7 @@ The forth section of the macro is:
 
 `Set rang = Application.Selection`
 
-`Set rang = Application.InputBox("Select a range of Cells you would like to Clear.", "Clear Cells", rang.Address, Type:=8)`
+`Set rang = Application.InputBox("Select a range of Cells you would like to clear.", "Clear Cells", rang.Address, Type:=8)`
 
 `For Each cel In rang`
 
@@ -188,7 +188,7 @@ The last section of the macro is:
 
 `End Sub`
 
-This section of code creates a new file for the macro to print to. It saves it to the users default file path and names the file *VBA+Macros.txt*. It then allows the user to select the range of cells that they would like converted into a markdown table. It then loops through each selected cell and prints the cell values and hyperlink URL (if applicable) to the new file while including specific formating guidelines for a markdown table. Once the macro finishes running, the user can access the saved file.
+This section of code creates a new file for the macro to print to. It saves it to the users default file path and names the file *VBA+Macros.txt*. It then allows the user to select the range of cells that they would like converted into a markdown table. It then loops through each selected cell and prints the cell value and hyperlink URL (if applicable) to the new file while including specific formating guidelines for a markdown table. Once the macro finishes running, the user can access the saved file.
 
 ### Example Of a Table Cleaned-up with the Macro
 To build the table, the user needs to copy the text file and paste it into the markdown editor on GitHub. Now the user can view a table on their website.
