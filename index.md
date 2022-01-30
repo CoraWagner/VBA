@@ -162,36 +162,36 @@ This section of code creates a new file for the macro to print to. It saves it t
 To build the table, the user needs to copy the text file and paste it into the markdown editor on GitHub. Now the user can view a table on their website.
 															
 |Day|Topic|Due|
-| 1 |What is Data Science ||
-| 2 |VBA|HW1 - Excel|
-| 3 |Data Communication||
-| 4 |Work Day|HW2 - VBA|
-| 5 |Why are data visualizations important ?|Reading Due - Florence Nightengale|
-| 6 |Tableau|COVID Risk Calculator|
-| 7 |How visualizations lie|Reading Due - Differnet Kinds of Data Visualization|
-| 8 |Work Day|HW 3 - Tableau|
-| 9 |Danielle|Reading Due - How Charts Lie|
-| 10 |R Intro||
-| 11 |Doing Better Data Visualization (R and ggplots tutorisl)|Why Data is good for governments to provide|
-| 12 |Work Day|HW 4 - ggplots|
-| 13 |Sentiment Analysis - History and Types|Data Annonymity|
-| 14 |TextBlob|Reading Due - How to un annonymize data|
-| 15 |VADER|De-Annonymizing Data|
-| 16 |P-Hacking Reflection|HW 5 - Sentiment Analysis|
+|1|[What is Data Science ](https://docs.google.com/document/d/1yhVB9DfddvJIiXitX2ZC1W0D3cJbcvib5fWmUlgqNO0/edit)||
+|2|[VBA](https://docs.google.com/document/d/1ASoeI5CjFgyQTBm-HFPvmRC_94niTPx4s9crQEDVb10/edit)|[HW1 - Excel](https://docs.google.com/document/d/1g8eOYNe9sDmrstRgvFRZBskxjaIaD7Za4lFXSgPPkVw/edit)|
+|3|[Data Communication](https://docs.google.com/document/d/1PTe_eezbRdZcxIOODyiQzDM4vtjVNJkVDC_7vZQSoZE/edit)||
+|4|Work Day|[HW2 - VBA](https://docs.google.com/document/d/1bTkmUon_Kq6_DupNw2Szh-T4rFGqzeA2aIIBy7m1yhk/edit)|
+|5|Why are data visualizations important ?|[Reading Due - Florence Nightengale](https://docs.google.com/forms/d/1FBgScIpV9Vpa-jb1nlWuoCqOxFE7v5SmQtacpFHpIq8/edit)|
+|6|Tableau|[COVID Risk Calculator](https://www.nytimes.com/2021/12/30/style/covid-risk-calculator.html)|
+|7|How visualizations lie|Reading Due - Differnet Kinds of Data Visualization|
+|8|Work Day|HW 3 - Tableau|
+|9|Danielle|Reading Due - How Charts Lie|
+|10|R Intro||
+|11|[Doing Better Data Visualization (R and ggplots tutorisl)](https://github.com/arielcwebster/DataScience/blob/main/Doing Better Data Visualization _ Enhanced Reader.pdf)|[Why Data is good for governments to provide](https://www.theguardian.com/local-government-network/2013/oct/21/open-data-us-san-francisco)|
+|12|Work Day|HW 4 - ggplots|
+|13|Sentiment Analysis - History and Types|Data Annonymity|
+|14|TextBlob|[Reading Due - How to un annonymize data](https://www.theguardian.com/technology/2019/jul/23/anonymised-data-never-be-anonymous-enough-study-finds)|
+|15|VADER|[De-Annonymizing Data](https://www.nature.com/articles/s41467-019-10933-3)|
+|16|[P-Hacking Reflection](https://rss.onlinelibrary.wiley.com/doi/epdf/10.1111/1740-9713.01505)|HW 5 - Sentiment Analysis|
 |Spring Break|||
 ||||
-| 17 |Random Forest||
-| 18 |||
+|17|Random Forest||
+|18|||
 |Advising Day|||
-| 19 ||HW 6 - Random Forest|
-| 20 |Clustering - K Nearest Neighbors||
-| 21 ||Possible Reading - Proxy Discrimination - When AI find predictive proxies for race - because society is segregated in this way. |
-| 22 |||
-| 23 ||HW 6 - Clustering|
-| 24 |Final Project||
-| 25 |||
-| 26 |||
-| 27 |||							
+|19||HW 6 - Random Forest|
+|20|Clustering - K Nearest Neighbors||
+|21||[Possible Reading - Proxy Discrimination - When AI find predictive proxies for race - because society is segregated in this way. ](https://ilr.law.uiowa.edu/print/volume-105-issue-3/proxy-discrimination-in-the-age-of-artificial-intelligence-and-big-data)|
+|22|||
+|23||HW 6 - Clustering|
+|24|Final Project||
+|25|||
+|26|||
+|27|||							
 
 
 ### Works Cited
