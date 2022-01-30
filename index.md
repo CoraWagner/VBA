@@ -30,7 +30,7 @@ The first section of my Macro made in VBA is:
 
 `For Each col In ran`
 
-`    col.EntireColumn.Delete`
+`col.EntireColumn.Delete`
 
 `Next col`
 
@@ -61,7 +61,7 @@ The second section of the macro is:
 
 `For Each row In rnge`
 
-`    row.EntireRow.Delete`
+`row.EntireRow.Delete`
 
 `Next row`
 
@@ -82,15 +82,15 @@ The third section of the macro is:
 
 `For Each cell In rng`
 
-`    cell.Select`
+`cell.Select`
 
-`    ActiveCell.Font.ColorIndex = 1`
+`ActiveCell.Font.ColorIndex = 1`
 
-`    ActiveCell.Font.Underline = False`
+`ActiveCell.Font.Underline = False`
 
-`    ActiveCell.Interior.ColorIndex = -4142`
+`ActiveCell.Interior.ColorIndex = -4142`
 
-`    ActiveCell.ClearHyperlinks`
+`ActiveCell.ClearHyperlinks`
 
 `Next cell`
 
@@ -105,16 +105,15 @@ The forth section of the macro is:
 
 `On Error Resume Next`
 
-
 `Set rang = Application.Selection`
 
 `Set rang = Application.InputBox("Select a range of Cells you would like to Clear.", "Clear Cells", rang.Address, Type:=8)`
 
 `For Each cel In rang`
 
-`    cel.Select`
+`cel.Select`
 
-`    ActiveCell.ClearContents`
+`ActiveCell.ClearContents`
 
 `Next cel`
 
@@ -147,41 +146,41 @@ The last section of the macro is:
 
 `For i = 1 To r.Rows.Count`
 
-`    For j = 1 To r.Columns.Count`
+`For j = 1 To r.Columns.Count`
     
-`        hold = r.Cells(i, j).Value`
+`hold = r.Cells(i, j).Value`
 	
-`        If r.Cells(i, j).Hyperlinks.Count > 0 Then`
+`If r.Cells(i, j).Hyperlinks.Count > 0 Then`
             
-`	    reqLink = r.Hyperlinks(x).Address`
+`reqLink = r.Hyperlinks(x).Address`
 	    
-`            x = x + 1`
+`x = x + 1`
 
-`            If j = r.Columns.Count Then`
+`If j = r.Columns.Count Then`
 
-`                Print #1, "|["; hold; "]("; reqLink; ")|"`
+`Print #1, "|["; hold; "]("; reqLink; ")|"`
 
-`            Else`
+`Else`
 
-`                Print #1, "|["; hold; "]("; reqLink; ")";`
+`Print #1, "|["; hold; "]("; reqLink; ")";`
 
-`            End If`
+`End If`
 
-`        Else`
+`Else`
 
-`            If j = r.Columns.Count Then`
+`If j = r.Columns.Count Then`
 
-`                Print #1, "|"; hold; "|"`
+`Print #1, "|"; hold; "|"`
 
-`            Else`
+`Else`
 
-`                Print #1, "|"; hold;`
+`Print #1, "|"; hold;`
 
-`            End If`
+`End If`
 
-`        End If`
+`End If`
 
-`    Next j`
+`Next j`
 
 `Next i`
 
