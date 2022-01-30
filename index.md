@@ -155,7 +155,6 @@ As in the preveious sections, the user can select which cells they would like th
 
 
 ### Works Cited
-[Hide Columns](https://www.educba.com/vba-hide-columns/)
 
 [InputBox](https://www.wallstreetmojo.com/vba-inputbox/)
 
@@ -164,5 +163,3 @@ As in the preveious sections, the user can select which cells they would like th
 [Change Font Color](https://www.educba.com/vba-font-color/)
 
 [Clear Hyperlinks](https://www.extendoffice.com/documents/excel/2221-excel-remove-hyperlink-without-removing-formatting.html#:~:text=In%20Excel%2C%20there%20is%20no%20direct%20way%20to,open%20the%20Microsoft%20Visual%20Basic%20for%20Applications%20window.)
-
-[Markdown Table Generator](https://www.tablesgenerator.com/markdown_tables)
