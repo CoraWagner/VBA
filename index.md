@@ -122,21 +122,37 @@ Like the previous sections, the user is able to select the cells that they want 
 #### Format a Table in Markdown
 The last section of the macro is:
 `Dim r As Range`
+
 `Dim newFile As String`
+
 `newFile = Application.DefaultFilePath & "\VBA+Macros.txt"`
+
 `On Error Resume Next`
+
 `Set r = Application.Selection`
+
 `Set r = Application.InputBox("Select a range of cells you would like to turn into a table.", "Make Table", r.Address, Type:=8)`
+
 `Open newFile For Output As #1`
+
 `For i = 1 To r.Rows.Count`
-`    For j = 1 To r.Columns.Count`
-`        If j = r.Columns.Count Then`
-`            Print #1, "|"; r.Cells(i, j).Value; "|"`
-`        Else`
-`            Print #1, "|"; r.Cells(i, j).Value;`
-`        End If`
-`    Next j`
+
+`For j = 1 To r.Columns.Count`
+
+`If j = r.Columns.Count Then`
+
+`Print #1, "|"; r.Cells(i, j).Value; "|"`
+
+`Else`
+
+`Print #1, "|"; r.Cells(i, j).Value;`
+
+`End If`
+
+`Next j`
+
 `Next i`
+
 `Close #1`
 
 This section of code creates a new file for the macro to print to. It saves it to the users default file path and names the file *VBA+Macros.txt*. It then allows the user to select the range of cells that they would like converted into a markdown table. It then loops through each selected cell and prints the cell values to the new file while including specific formating guidelines for a markdown table. Once the maacro finishes running, the user can access the saved file.
