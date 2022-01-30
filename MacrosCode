@@ -63,17 +63,33 @@ Next cel
 '
 Dim r As Range
 Dim newFile As String
+Dim hold As String
+Dim link As Hyperlink
+Dim i As Integer
+
 newFile = Application.DefaultFilePath & "\VBA+Macros.txt"
 On Error Resume Next
 Set r = Application.Selection
 Set r = Application.InputBox("Select a range of cells you would like to turn into a table.", "Make Table", r.Address, Type:=8)
 Open newFile For Output As #1
+x = 1
 For i = 1 To r.Rows.Count
     For j = 1 To r.Columns.Count
-        If j = r.Columns.Count Then
-            Print #1, "|"; r.Cells(i, j).Value; "|"
+        hold = r.Cells(i, j).Value
+        If r.Cells(i, j).Hyperlinks.Count > 0 Then
+            reqLink = r.Hyperlinks(x).Address
+            x = x + 1
+            If j = r.Columns.Count Then
+                Print #1, "|["; hold; "]("; reqLink; ")|"
+            Else
+                Print #1, "|["; hold; "]("; reqLink; ")";
+            End If
         Else
-            Print #1, "|"; r.Cells(i, j).Value;
+            If j = r.Columns.Count Then
+                Print #1, "|"; hold; "|"
+            Else
+                Print #1, "|"; hold;
+            End If
         End If
     Next j
 Next i
