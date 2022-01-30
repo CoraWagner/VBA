@@ -15,7 +15,7 @@ Dim ran As Range
 Dim col As Range
 On Error Resume Next
 Set ran = Application.Selection
-Set ran = Application.InputBox("Select a range of Columns you would like to hide.", "Hide Columns", ran.Address, Type:=8)
+Set ran = Application.InputBox("Select a range of Columns you would like to remove.", "Remove Columns", ran.Address, Type:=8)
 For Each col In ran
     col.EntireColumn.Delete
 Next col
@@ -27,7 +27,7 @@ Dim rnge As Range
 Dim row As Range
 On Error Resume Next
 Set rnge = Application.Selection
-Set rnge = Application.InputBox("Select a range of Rows you would like to hide.", "Hide Rows", rnge.Address, Type:=8)
+Set rnge = Application.InputBox("Select a range of Rows you would like to remove.", "Remove Rows", rnge.Address, Type:=8)
 For Each row In rnge
     row.EntireRow.Delete
 Next row
@@ -58,7 +58,7 @@ Dim rang As Range
 Dim cel As Range
 On Error Resume Next
 Set rang = Application.Selection
-Set rang = Application.InputBox("Select a range of Cells you would like to hide.", "Hide Cells", rang.Address, Type:=8)
+Set rang = Application.InputBox("Select a range of Cells you would like to clear.", "Clear Cells", rang.Address, Type:=8)
 For Each cel In rang
     cel.Select
     ActiveCell.ClearContents
