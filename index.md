@@ -15,7 +15,7 @@
 8. You can now run the macro by using the shortcut key you created, or by selecting *Macro* and double clicking the name you created for the macro.
 
 ### How the macro works
-#### Hide Columns
+#### Delete Columns
 The first section of my Macro made in VBA is:
 
 `Dim ran As range`
@@ -30,11 +30,11 @@ The first section of my Macro made in VBA is:
 
 `For Each col In ran`
 
-`col.EntireColumn.Hidden = True`
+`col.EntireColumn.Delete`
 
 `Next col`
 
-This block of code allows the user to selects the specific range of columns that they would like to hide form view. This is possible by setting the `ran` range to `Application.Selection` and then `Application.InputBox("Select a range of Columns you would like to hide.", "Hide Columns", ran.Address, Type:=8)`. 
+This block of code allows the user to selects the specific range of columns that they would like to delete. This is possible by setting the `ran` range to `Application.Selection` and then `Application.InputBox("Select a range of Columns you would like to hide.", "Hide Columns", ran.Address, Type:=8)`. 
 
 The parameters in `Application.InputBox()` are:
 1. The main message of the pop-up box
@@ -42,11 +42,11 @@ The parameters in `Application.InputBox()` are:
 3. The location of the cells being selected
 4. The type that is being selected
 
-In this case, the type being selected is a cell reference. There is then a for loop that iterates through all the selected cells and hides the entire column. 
+In this case, the type being selected is a cell reference. There is then a for loop that iterates through all the selected cells and deletes the entire column. 
 
-**NOTE**: You only need to select one cell within each column. Selecting a whole column will cause Excel to crash.
+**NOTE**: In order to delete the entire column, you need to highlight the entire column. Not just a single cell.
 
-#### Hide Rows
+#### Delete Rows
 The second section of the macro is:
 
 `Dim rnge As range`
@@ -61,39 +61,16 @@ The second section of the macro is:
 
 `For Each row In rnge`
 
-`row.EntireRow.Hidden = True`
+`row.EntireRow.Delete`
 
 `Next row`
 
-This block of code is similar to *Hide Columns* section as it allows the user to select which rows they would like to remove. The only difference, besides the variable names, is that instead of `EntireColumn.Hidden = True` it is `EntireRow.Hidden = True`.
+This block of code is similar to *delete Columns* section as it allows the user to select which rows they would like to remove. The only difference, besides the variable names, is that instead of `EntireColumn` it is `EntireRow`.
 
-**NOTE**: You only need to select one cell in the row you want to remove. Selecting a whole row will cause Excel to crash.
-
-#### Hide Cell Content
-The third section of the macro is:
-
-`Dim rang As range`
-
-`Dim cel As range`
-
-`On Error Resume Next`
-
-`Set rang = Application.Selection`
-
-`Set rang = Application.InputBox("Select a range of Cells you would like to hide.", "Hide Cells", rang.Address, Type:=8)`
-
-`For Each cel In rang`
-
-`cel.Select`
-
-`ActiveCell.NumberFormat = ";;;"`
-
-`Next cel`
-
-Like the previous sections, the user is able to select the cells that they want the contents to be hidden. The way that the content is hidden is by setting the number format to `";;;"` which is a custom formula that allows the cell to retain the information, but removes the text.
+**NOTE**: In order to delete the entire row, you need to highlight the entire row. Not just a single cell.
 
 #### Remove Unwanted Hyperlinks
-The last section of the macro is:
+The third section of the macro is:
 
 `Dim rng As range, cell As range`
 
@@ -119,7 +96,53 @@ The last section of the macro is:
 
 As in the preveious sections, the user can select which cells they would like the hyperlinks to be removed from. The text is then changed to black, the undeline is removed, and the background color is set back to default. Then the hyperlink is cleared from the cell.
 
+#### Clear Cell Content
+The forth section of the macro is:
+
+`Dim rang As range`
+
+`Dim cel As range`
+
+`On Error Resume Next`
+
+`Set rang = Application.Selection`
+
+`Set rang = Application.InputBox("Select a range of Cells you would like to hide.", "Hide Cells", rang.Address, Type:=8)`
+
+`For Each cel In rang`
+
+`cel.Select`
+
+`ActiveCell.ClearContent`
+
+`Next cel`
+
+Like the previous sections, the user is able to select the cells that they want the contents to be removed from. The way that the content is removed is by using the function `ClearContent`.
+
+#### Format a Table in Markdown
+The last section of the macro is:
+`Dim r As Range`
+`Dim newFile As String`
+`newFile = Application.DefaultFilePath & "\VBA+Macros.txt"`
+`On Error Resume Next`
+`Set r = Application.Selection`
+`Set r = Application.InputBox("Select a range of cells you would like to turn into a table.", "Make Table", r.Address, Type:=8)`
+`Open newFile For Output As #1`
+`For i = 1 To r.Rows.Count`
+`    For j = 1 To r.Columns.Count`
+`        If j = r.Columns.Count Then`
+`            Print #1, "|"; r.Cells(i, j).Value; "|"`
+`        Else`
+`            Print #1, "|"; r.Cells(i, j).Value;`
+`        End If`
+`    Next j`
+`Next i`
+`Close #1`
+
+This section of code creates a new file for the macro to print to. It saves it to the users default file path and names the file *VBA+Macros.txt*. It then allows the user to select the range of cells that they would like converted into a markdown table. It then loops through each selected cell and prints the cell values to the new file while including specific formating guidelines for a markdown table. Once the maacro finishes running, the user can access the saved file.
+
 ### Example Of a Table Cleaned-up with the Macro
+To build the table, the user needs to copy the text file and paste it into the markdown editor on GitHub. Now the user can view a table on their website.
 															
 |Day|Topic|Due|
 | 1 |What is Data Science ||
@@ -163,3 +186,7 @@ As in the preveious sections, the user can select which cells they would like th
 [Change Font Color](https://www.educba.com/vba-font-color/)
 
 [Clear Hyperlinks](https://www.extendoffice.com/documents/excel/2221-excel-remove-hyperlink-without-removing-formatting.html#:~:text=In%20Excel%2C%20there%20is%20no%20direct%20way%20to,open%20the%20Microsoft%20Visual%20Basic%20for%20Applications%20window.)
+
+[Write to Text File](https://www.excel-easy.com/vba/examples/write-data-to-text-file.html)
+
+[Print to Text File](https://analysistabs.com/vba/vba-write-string-text-file-without-quotes/#:~:text=Starting%20the%20program%20and%20sub%20procedure%20to%20write,text%20file%20for%20Output%20with%20FileNumber%20as%201.)
