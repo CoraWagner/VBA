@@ -121,6 +121,7 @@ Like the previous sections, the user is able to select the cells that they want 
 
 #### Format a Table in Markdown
 The last section of the macro is:
+
 `Dim r As Range`
 
 `Dim newFile As String`
