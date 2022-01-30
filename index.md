@@ -142,12 +142,12 @@ As in the preveious sections, the user can select which cells they would like th
 ||||
 | 17 |Random Forest||
 | 18 |||
-|Advising Day||HW 6 - Random Forest|
-| 19 |||
-| 20 |Clustering - K Nearest Neighbors|Possible Reading - Proxy Discrimination - When AI find predictive proxies for race - because society is segregated in this way. |
-| 21 |||
-| 22 ||HW 6 - Clustering|
-| 23 |||
+|Advising Day|||
+| 19 ||HW 6 - Random Forest|
+| 20 |Clustering - K Nearest Neighbors||
+| 21 ||Possible Reading - Proxy Discrimination - When AI find predictive proxies for race - because society is segregated in this way. |
+| 22 |||
+| 23 ||HW 6 - Clustering|
 | 24 |Final Project||
 | 25 |||
 | 26 |||
